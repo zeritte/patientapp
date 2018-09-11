@@ -1,0 +1,43 @@
+{
+  "name": "patientapplication",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "eslint-plugin-react-native": "^3.2.1",
+    "frisbee": "^1.6.4",
+    "lodash": "^4.17.10",
+    "native-base": "^2.5.2",
+    "react": "16.0.0",
+    "react-native": "^0.55.4",
+    "react-native-af-video-player": "^0.2.1",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-router-flux": "^3.40.1",
+    "react-native-snap-carousel": "^3.6.0",
+    "react-native-video": "^2.0.0",
+    "react-native-video-controls": "^2.0.2",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "babel-jest": "22.0.4",
+    "babel-preset-react-native": "4.0.0",
+    "eslint-plugin-react": "^7.7.0",
+    "expo": "^26.0.0",
+    "firebase": "^4.8.2",
+    "jest": "22.0.4",
+    "prop-types": "^15.6.2",
+    "react-native-button": "^2.3.0",
+    "react-navigation": "^1.5.11",
+    "react-test-renderer": "16.0.0",
+    "redux-form": "^7.3.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
