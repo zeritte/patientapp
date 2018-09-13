@@ -6,9 +6,9 @@ import {
     Image,
 } from 'react-native';
 import { connect } from 'react-redux';
-import { 
-    Button, 
-    Card, 
+import {
+    Button,
+    Card,
     CardSection,
     ContainerBackground
 } from '../../common';
@@ -28,12 +28,12 @@ class HomeScreen extends React.Component {
                     <View style={styles.buttons}>
                         <CardSection>
                             <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.props.navigation.navigate('Register')}>
-                                <Text>Hemen Başla</Text>
+                                <Text>HEMEN BAŞLA</Text>
                             </Button>
                         </CardSection>
                         <CardSection>
                             <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.props.navigation.navigate('Login')}>
-                                <Text>Bir Hesabım Var</Text>
+                                <Text>BİR HESABIM VAR</Text>
                             </Button>
                         </CardSection>
                     </View>

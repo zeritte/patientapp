@@ -16,7 +16,7 @@ class Warning extends Component {
 
     clickYes() {
         const { navigation } = this.props;
-        navigation.navigate('Home');
+        navigation.navigate('QuestionFive');
     }
 
     render() {
@@ -29,12 +29,22 @@ class Warning extends Component {
                             <Image source={require("../../../../assets/ios-arrow-back.png")} />
                         </TouchableOpacity>
                     </CardSection>
-                    <CardSection>
-                     <Text style={{ fontSize: 36, color: 'white', alignItems: 'center' }}>
-                       Doktorunun onayı var mı?
-                     </Text>
-                    </CardSection>
-                </Card>
+                      <View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: 130 }}>
+                       <Text style={{ margin: 30, fontSize: 32, color: 'white', textAlign: 'center' }}>
+                         Doktorunun onayı var mı?
+                       </Text>
+                       <Image style={{ marginTop: 10, alignSelf: 'center' }} source={require("../../../../assets/ios-alert.png")} />
+                       <Text style={{ margin: 30, fontSize: 16, color: 'white', textAlign: 'center' }}>
+                         Kronik bir rahatsızlığın olduğunu
+                         belirttiğin için egzersiz aktivitelerini doktoruna danışıp yapmalısın. Yine de devam etmek istiyor musun?
+                       </Text>
+                       </View>
+                       <CardSection>
+                           <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.clickYes()}>
+                               <Text>DEVAM ET</Text>
+                           </Button>
+                       </CardSection>
+                  </Card>
             </View>
         );
     }

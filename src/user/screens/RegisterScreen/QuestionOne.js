@@ -39,12 +39,12 @@ class QuestionOne extends Component {
                   <View style={{ marginTop: 380 }} >
                     <CardSection>
                         <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.answerChange('Erkek')}>
-                            <Text>Erkek</Text>
+                            <Text>ERKEK</Text>
                         </Button>
                     </CardSection>
                     <CardSection>
                         <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.answerChange('Kadin')}>
-                            <Text>Kadın</Text>
+                            <Text>KADIN</Text>
                         </Button>
                     </CardSection>
                   </View>

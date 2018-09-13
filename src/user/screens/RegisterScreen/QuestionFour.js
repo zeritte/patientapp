@@ -24,11 +24,12 @@ class QuestionFour extends Component {
         if(answer==="Var") {
             navigation.navigate('Warning');
         }else{
-          navigation.navigate('Home');
+          navigation.navigate('QuestionFive');
         }
     }
 
     render() {
+      const { navigation } = this.props;
         return (
             <ContainerBackground source={require('../../images/figure-5.png')} style={{ flex: 1, backgroundColor: 'white' }}>
                 <Card>
@@ -42,16 +43,18 @@ class QuestionFour extends Component {
                             Kronik Bir Rahatsızlığın Var mı?
                         </Text>
                     </CardSection>
+                    <View style={{ flex: 1, marginTop: 350 }}>
                     <CardSection>
                         <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.answerChange('Var')}>
-                            <Text>Var</Text>
+                            <Text>VAR</Text>
                         </Button>
                     </CardSection>
                     <CardSection>
                         <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.answerChange('Yok')}>
-                            <Text>Yok</Text>
+                            <Text>YOK</Text>
                         </Button>
                     </CardSection>
+                    </View>
                 </Card>
             </ContainerBackground>
         );

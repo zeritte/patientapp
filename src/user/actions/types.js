@@ -14,3 +14,5 @@ export const QUESTION_ONE_CHANGED = 'question_one_changed';
 export const QUESTION_TWO_CHANGED = 'question_two_changed';
 export const QUESTION_THREE_CHANGED = 'question_three_changed';
 export const QUESTION_FOUR_CHANGED = 'question_four_changed';
+export const QUESTION_FIVE_CHANGED = 'question_five_changed';
+export const QUESTION_SIX_CHANGED = 'question_six_changed';

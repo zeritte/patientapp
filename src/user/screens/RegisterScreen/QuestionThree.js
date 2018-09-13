@@ -33,6 +33,7 @@ class QuestionThree extends Component {
     }
 
     render() {
+      const { navigation } = this.props;
         return (
             <ContainerBackground source={require('../../images/figure-4.png')} style={{ flex: 1, backgroundColor: 'white' }}>
                 <Card>
@@ -47,7 +48,7 @@ class QuestionThree extends Component {
                     <View style={{ flex: 1, marginTop: 250 }}>
                     <CardSection>
                         <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.answerChange()}>
-                            <Text>Devam et</Text>
+                            <Text>DEVAM ET</Text>
                         </Button>
                     </CardSection>
                     <CardSection>
