@@ -86,7 +86,7 @@ class LoginScreen extends Component {
                         {this.props.loading ? (
                             <Spinner size="small" />
                         ) : (
-                            <Text style={styles.text}> LOGIN </Text>
+                            <Text style={styles.text}>GİRİŞ</Text>
                         )}
                     </TouchableOpacity>
                     <Animated.View
@@ -113,20 +113,17 @@ class LoginScreen extends Component {
                         </TouchableOpacity>
                     </CardSection>
                     <CardSection>
-                        <Button full rounded primary style={{ marginTop: 10 }} onPress={() => this.props.navigation.navigate('TestHome')}>
-                            <Text>Goto Test Home</Text>
-                        </Button>
-                    </CardSection>
-                    <CardSection>
                         <Text style={styles.textTitle}>MERHABA</Text>
                     </CardSection>
+                    <View style={{ marginTop: 150 }}>
                     <CardSection>
                         <TextInput placeholder="E-mail" value={this.props.email} style={inputStyle} onChangeText={email => this.props.emailChanged(email)} />
                     </CardSection>
                     <CardSection>
-                        <TextInput placeholder="Şifre" value={this.props.password} style={inputStyle} onChangeText={password => this.props.passwordChanged(password)} />
+                        <TextInput secureTextEntry splaceholder="Şifre" value={this.props.password} style={inputStyle} onChangeText={password => this.props.passwordChanged(password)} />
                     </CardSection>
                     <View>{this.renderButton()}</View>
+                    </View>
                 </Card>
             </ContainerBackground>
         );

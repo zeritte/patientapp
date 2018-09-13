@@ -23,7 +23,7 @@ class QuestionSix extends Component {
     answerChange() {
         const { questionSixChanged, navigation } = this.props;
         questionSixChanged(this.state.chosenOne);
-        navigation.navigate('SignUp');
+        navigation.navigate('SignUpPrep');
     }
 
     render() {

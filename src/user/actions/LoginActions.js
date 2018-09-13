@@ -5,7 +5,9 @@ import {
     PASSWORD_CHANGED,
     LOGIN_USER,
     LOGIN_USER_SUCCESS,
-    LOGIN_USER_FAIL
+    LOGIN_USER_FAIL,
+    NAME_CHANGED,
+    SURNAME_CHANGED
 } from './types';
 
 export const emailChanged = (email) => {
@@ -25,6 +27,30 @@ export const passwordChanged = (password) => {
         });
     };
 };
+
+export const nameChanged = (name) => {
+    return (dispatch) => {
+        dispatch({
+            type: NAME_CHANGED,
+            payload: name
+        });
+    };
+};
+
+export const surnameChanged = (surname) => {
+    return (dispatch) => {
+        dispatch({
+            type: SURNAME_CHANGED,
+            payload: surname
+        });
+    };
+};
+
+export const signUpUser = ({ email, password, navigation, name, surname, startGrow, endGrow }) => {
+  return dispatch => {
+
+  }
+}
 
 export const loginUser = ({ email, password, navigation, startGrow, endGrow }) => {
     return dispatch => {
