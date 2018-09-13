@@ -23,7 +23,7 @@ class QuestionSix extends Component {
     answerChange() {
         const { questionSixChanged, navigation } = this.props;
         questionSixChanged(this.state.chosenOne);
-        navigation.navigate('Home');
+        navigation.navigate('SignUp');
     }
 
     render() {
@@ -141,7 +141,7 @@ class QuestionSix extends Component {
                             <Picker.Item label="118 kg" value="118kg" />
                             <Picker.Item label="119 kg" value="119kg" />
                             <Picker.Item label="120 kg" value="120kg" />
-                            
+
                         </Picker>
                         </View>
                     </CardSection>

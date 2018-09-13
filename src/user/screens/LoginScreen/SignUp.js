@@ -18,7 +18,7 @@ const DEVICE_WIDTH = Dimensions.get('window').width;
 const MARGIN = 45;
 import styles from './Styles';
 
-class LoginScreen extends Component {
+class SignUp extends Component {
     constructor(props) {
         super(props);
         this.buttonAnimated = new Animated.Value(0);
@@ -133,11 +133,11 @@ class LoginScreen extends Component {
     }
 }
 
-LoginScreen.navigationOptions = {
+SignUp.navigationOptions = {
     header: null
 };
 
-LoginScreen.propTypes = {
+SignUp.propTypes = {
     navigation: PropTypes.object,
     emailChanged: PropTypes.func,
     passwordChanged: PropTypes.func,
@@ -156,4 +156,4 @@ const mapStateToProps = ({ loginDataResponse }) => {
     };
 };
 
-export default connect(mapStateToProps, { emailChanged, passwordChanged, loginUser })(LoginScreen);
+export default connect(mapStateToProps, { emailChanged, passwordChanged, loginUser })(SignUp);

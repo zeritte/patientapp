@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import DatePicker from 'react-native-date-picker';
 import PropTypes from 'prop-types';
 import {
-    Text, TouchableOpacity, View, Image, DatePickerIOS
+    Platform, Text, TouchableOpacity, View, Image, DatePickerIOS
 } from 'react-native';
 import {
     Button,
@@ -53,11 +53,11 @@ class QuestionThree extends Component {
                     </CardSection>
                     <CardSection>
                         <View style={{ flex: 1, backgroundColor:'white' }}>
-                        <DatePickerIOS
-                          mode="date"
-                          date={this.state.chosenDate}
-                          onDateChange={this.setDate}
-                        />
+                          <DatePickerIOS
+                            mode="date"
+                            date={this.state.chosenDate}
+                            onDateChange={this.setDate}
+                          />
                         </View>
                     </CardSection>
                     </View>
