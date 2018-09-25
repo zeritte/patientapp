@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import DatePicker from 'react-native-date-picker';
 import PropTypes from 'prop-types';
 import {
     Platform, Text, TouchableOpacity, View, Image, DatePickerIOS
